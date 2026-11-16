@@ -1,0 +1,27 @@
+name: moviebox_app
+description: Flutter client for the MovieBox FastAPI backend.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1        # state management
+  dio: ^5.4.3                      # HTTP
+  go_router: ^14.0.0               # navigation
+  cached_network_image: ^3.3.1     # posters
+  shared_preferences: ^2.2.3       # server URL + session id
+  media_kit: ^1.1.10               # player (libmpv: HLS, DASH, HEVC, custom headers)
+  media_kit_video: ^1.2.4
+  media_kit_libs_video: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
